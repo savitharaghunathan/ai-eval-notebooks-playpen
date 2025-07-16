@@ -1,8 +1,0 @@
-| Bias name                                      | defn                                                                                                                                                            |
-| ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **First case bias**                            | When comparing options (or listing arguments), the LLM tends to slightly favor the first item it sees. Often due to sequential decoding and primacy effect.              |
-| **Self-evaluation bias (LLM evaluator bias)**  | When an LLM judges outputs written by the same kind of LLM, it tends to prefer answers that match its own typical style or hedging patterns, leading to inflated scores. |
-| **Alignment bias (or style calibration bias)** | The LLM scoring process favors responses that conform closely to its own training distribution — verbose, balanced, polite — even if they are less factually sharp.      |
-| **Fluency bias**                               | The LLM may over-reward answers that are well-written or “flowery” over short, direct, but factually solid answers.                                                      |
-| **Order-of-metrics bias**                      | If your prompt lists multiple criteria, it might weight the first mentioned more heavily. (E.g., “Rate for faithfulness, then helpfulness, then style.”)                 |
-| **Overconfidence bias**                        | LLM evaluators sometimes produce scores with a false sense of precision (like `0.973`), even when the underlying judgment is fuzzy.                                      |
